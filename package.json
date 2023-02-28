@@ -1,0 +1,11 @@
+{
+  "name": "preentrega-3-rojo",
+  "version": "1.0.0",
+  "description": "Pre Entrega 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sofia Rojo",
+  "license": "ISC"
+}

@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 65,2%;
+    font-size: 65, 2%;
 }
 
 
@@ -13,12 +13,12 @@ html {
 /*-------------------- ESTRUCTURA GRID HTML INDEX: INICIO --------------------*/
 .grid-container {
     display: grid;
-    grid-template-areas: 
-    "header header header header header header header header header header header header"
-    "intro intro intro intro intro intro logo logo logo logo logo logo"
-    "sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi"
-    "imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-areas:
+        "header header header header header header header header header header header header"
+        "intro intro intro intro intro intro logo logo logo logo logo logo"
+        "sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi"
+        "imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 1fr);
     row-gap: 125px;
@@ -62,19 +62,19 @@ footer {
 /*-------------------- MEDIA QUERIES HTML INDEX: INICIO --------------------*/
 @media only screen and (max-width: 768px) {
     .grid-container {
-      display: grid;
-      grid-template-areas: 
-      "header header header"
-      "intro intro intro"
-      "logo logo logo"
-      "sobre-mi sobre-mi sobre-mi"
-      "imagenes imagenes imagenes"
-      "footer footer footer";
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      width: 100%;
+        display: grid;
+        grid-template-areas:
+            "header header header"
+            "intro intro intro"
+            "logo logo logo"
+            "sobre-mi sobre-mi sobre-mi"
+            "imagenes imagenes imagenes"
+            "footer footer footer";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 100%;
     }
-  
+
     .logo {
         width: auto;
         display: flex;
@@ -95,26 +95,26 @@ footer {
 
 @media screen and (min-width:769px) and (max-width:1024px) {
     .grid-container {
-    display: grid;
-    grid-template-areas: 
-    "header header header header header header header header"
-    "intro intro intro intro intro intro intro intro"
-    "logo logo logo logo logo logo logo logo"
-    "sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi"
-    "imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes"
-    "footer footer footer footer footer footer footer footer";
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    width: 100%;
+        display: grid;
+        grid-template-areas:
+            "header header header header header header header header"
+            "intro intro intro intro intro intro intro intro"
+            "logo logo logo logo logo logo logo logo"
+            "sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi"
+            "imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes"
+            "footer footer footer footer footer footer footer footer";
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        width: 100%;
     }
-    
+
     .logo {
         width: auto;
         display: flex;
         flex-direction: column;
         justify-items: flex-start;
-      }
-  
+    }
+
     .intro {
         display: flex;
         flex-direction: column;
@@ -172,18 +172,18 @@ h2 {
 /*-------------------- TEXTOS --------------------*/
 p {
     font-size: 1.2rem;
-    font-family:"Gudea", serif;
+    font-family: "Gudea", serif;
     padding: 15px;
-} 
+}
 
 .beneficios p {
     text-align: center;
     font-size: 1.2rem;
-    
+
 }
 
 .estilos p {
-    text-align:center;
+    text-align: center;
     font-size: 1.2rem;
 }
 
@@ -211,12 +211,12 @@ p {
 .grid-container2 {
     display: grid;
     grid-template-areas:
-    "header header header header header header header header header header header header"
-    "beneficios beneficios beneficios beneficios beneficios beneficios beneficios beneficios beneficios beneficios beneficios beneficios"
-    "yoga yoga yoga yoga yoga yoga yoga yoga yoga yoga yoga yoga"
-    "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo"
-    "mente mente mente mente mente mente mente mente mente mente mente mente"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
+        "header header header header header header header header header header header header"
+        "beneficios beneficios beneficios beneficios beneficios beneficios beneficios beneficios beneficios beneficios beneficios beneficios"
+        "yoga yoga yoga yoga yoga yoga yoga yoga yoga yoga yoga yoga"
+        "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo"
+        "mente mente mente mente mente mente mente mente mente mente mente mente"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, auto);
     row-gap: 50px;
@@ -259,12 +259,12 @@ footer {
     .grid-container2 {
         display: grid;
         grid-template-areas:
-        "header header header "
-        "beneficios beneficios beneficios"
-        "yoga yoga yoga yoga"
-        "cuerpo cuerpo cuerpo"
-        "mente mente mente"
-        "footer footer footer";
+            "header header header "
+            "beneficios beneficios beneficios"
+            "yoga yoga yoga yoga"
+            "cuerpo cuerpo cuerpo"
+            "mente mente mente"
+            "footer footer footer";
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(6, auto);
         column-gap: normal;
@@ -277,12 +277,12 @@ footer {
     .grid-container2 {
         display: grid;
         grid-template-areas:
-        "header header header header header header"
-        "beneficios beneficios beneficios beneficios beneficios beneficios"
-        "yoga yoga yoga yoga yoga yoga"
-        "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo"
-        "mente mente mente mente mente mente"
-        "footer footer footer footer footer footer";
+            "header header header header header header"
+            "beneficios beneficios beneficios beneficios beneficios beneficios"
+            "yoga yoga yoga yoga yoga yoga"
+            "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo"
+            "mente mente mente mente mente mente"
+            "footer footer footer footer footer footer";
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(6, auto);
         column-gap: normal;
@@ -296,27 +296,27 @@ footer {
 /*------------------- ESTRUCTURA GRID HTML ESTILOS ------------------*/
 .grid-container3 {
     display: grid;
-    grid-template-areas: 
-    "header header header header header header header header header header header header"
-    "estilos estilos estilos estilos estilos estilos estilos estilos estilos estilos estilos estilos"
-    "clases clases clases clases clases clases clases clases clases clases clases clases"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-areas:
+        "header header header header header header header header header header header header"
+        "estilos estilos estilos estilos estilos estilos estilos estilos estilos estilos estilos estilos"
+        "clases clases clases clases clases clases clases clases clases clases clases clases"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, auto);
     row-gap: auto;
     column-gap: 10px;
-    
+
 }
-  
+
 .header {
     grid-area: header;
 }
-  
-  
+
+
 .estilos {
     grid-area: estilos;
 }
-  
+
 .clases {
     grid-area: clases;
 }
@@ -336,16 +336,16 @@ footer {
 @media only screen and (max-width: 768px) {
     .grid-container3 {
         display: grid;
-        grid-template-areas: 
-        "header header header"
-        "estilos estilos estilos"
-        "clases clases clases"
-        "footer footer footer";
+        grid-template-areas:
+            "header header header"
+            "estilos estilos estilos"
+            "clases clases clases"
+            "footer footer footer";
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, auto);
         row-gap: auto;
         column-gap: 10px;
-        
+
     }
 }
 
@@ -353,16 +353,16 @@ footer {
 @media screen and (min-width:769px) and (max-width:1024px) {
     .grid-container3 {
         display: grid;
-        grid-template-areas: 
-        "header header header header header header header header"
-        "estilos estilos estilos estilos estilos estilos estilos estilos"
-        "clases clases clases clases clases clases clases clases"
-        "footer footer footer footer footer footer footer footer";
+        grid-template-areas:
+            "header header header header header header header header"
+            "estilos estilos estilos estilos estilos estilos estilos estilos"
+            "clases clases clases clases clases clases clases clases"
+            "footer footer footer footer footer footer footer footer";
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(4, auto);
         row-gap: auto;
         column-gap: auto;
-        
+
     }
 }
 
@@ -372,11 +372,11 @@ footer {
 /*-------------------- ESTRUCTURA GRID HTML: HORARIOS------------------*/
 .grid-container4 {
     display: grid;
-    grid-template-areas: 
-    "header header header header header header header header header header header header"
-    "horarios horarios horarios horarios horarios horarios horarios horarios horarios horarios horarios horarios"
-    "table table table table table table table table table table table table"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
+    grid-template-areas:
+        "header header header header header header header header header header header header"
+        "horarios horarios horarios horarios horarios horarios horarios horarios horarios horarios horarios horarios"
+        "table table table table table table table table table table table table"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, auto);
     row-gap: 100px;
@@ -409,11 +409,11 @@ footer {
 @media only screen and (max-width: 768px) {
     .grid-container4 {
         display: grid;
-        grid-template-areas: 
-        "header header header header"
-        "horarios horarios horarios horarios"
-        "table table table table"
-        "footer footer footer footer";
+        grid-template-areas:
+            "header header header header"
+            "horarios horarios horarios horarios"
+            "table table table table"
+            "footer footer footer footer";
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, auto);
         row-gap: auto;
@@ -423,7 +423,7 @@ footer {
 
     .horarios {
         overflow-x: auto;
-    
+
     }
 }
 
@@ -433,11 +433,11 @@ footer {
 .grid-container5 {
     display: grid;
     grid-template-areas:
-    "header header header header header header header header header header header header"
-    "consultas consultas consultas consultas consultas consultas consultas consultas consultas consultas consultas consultas"
-    "formulario formulario formulario formulario formulario formulario formulario formulario formulario formulario formulario formulario"
-    "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion"
-    "footer footer footer footer footer footer footer footer footer footer footer footer";
+        "header header header header header header header header header header header header"
+        "consultas consultas consultas consultas consultas consultas consultas consultas consultas consultas consultas consultas"
+        "formulario formulario formulario formulario formulario formulario formulario formulario formulario formulario formulario formulario"
+        "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion"
+        "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, auto);
     row-gap: 25px;
@@ -473,11 +473,11 @@ footer {
     .grid-container5 {
         display: grid;
         grid-template-areas:
-        "header header header"
-        "consultas consultas consultas"
-        "formulario formulario formulario"
-        "ubicacion ubicacion ubicacion"
-        "footer footer footer";
+            "header header header"
+            "consultas consultas consultas"
+            "formulario formulario formulario"
+            "ubicacion ubicacion ubicacion"
+            "footer footer footer";
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, auto);
         row-gap: auto;
@@ -494,11 +494,11 @@ footer {
     .grid-container5 {
         display: grid;
         grid-template-areas:
-        "header header header header header header header header"
-        "consultas consultas consultas consultas consultas consultas consultas consultas"
-        "formulario formulario formulario formulario formulario formulario formulario formulario"
-        "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion"
-        "footer footer footer footer footer footer footer footer";
+            "header header header header header header header header"
+            "consultas consultas consultas consultas consultas consultas consultas consultas"
+            "formulario formulario formulario formulario formulario formulario formulario formulario"
+            "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion"
+            "footer footer footer footer footer footer footer footer";
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(5, auto);
         row-gap: auto;
@@ -527,3 +527,4 @@ footer {
     justify-content: center;
 }
 
+/*# sourceMappingURL=main.css.map */
