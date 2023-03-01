@@ -258,6 +258,9 @@ footer {
 .estilos {
   grid-area: estilos;
 }
+.estilos .estilos-titulo {
+  margin-top: 80px;
+}
 
 .clases {
   grid-area: clases;
@@ -265,10 +268,6 @@ footer {
 
 footer {
   grid-area: footer;
-}
-
-.estilos-titulo {
-  margin-top: 80px;
 }
 
 /*-------------------- MEDIA QUERIES HTML: ESTILOS -------------------*/

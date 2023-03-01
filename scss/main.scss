@@ -15,7 +15,7 @@ $tertiary-color: rgb(166, 119, 219);
 /*Tipografia - Fuentes, tamaño*/
 $t-fuente-1: 1.2rem;
 $t-fuente-2: 1.5rem;
-$t-fuente-3: 3rem;
+$t-fuente_3: 3rem;
 $gudea-font-family: "Gudea", serif;
 /*Height y Width*/
 $width-1: 100%;
@@ -23,9 +23,12 @@ $heigth-1: 100vh;
 /*Padding y Margin*/
 $padding-1: 15px;
 $margin-1: auto;
+$margin-2: 100px;
 /*Filas y Columnas*/
 $row-1: auto;
+$row-2: 100px;
 $column-1: auto;
+$column-2: 100px;
 
 
 /*-------------------- ESTRUCTURA GRID HTML INDEX: INICIO --------------------*/
@@ -39,8 +42,8 @@ $column-1: auto;
     "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    row-gap: 125px;
-    column-gap: 100px;
+    row-gap: $row-2 + 25px;
+    column-gap: $column-2;
     height: $heigth-1;
 }
 
@@ -106,7 +109,7 @@ footer {
         justify-content: space-around;
         
         h1 {
-            font-size: 1rem;
+            font-size: $t-fuente_3 - 2rem;
         }
     }
 }
@@ -145,7 +148,7 @@ footer {
 .intro {
     h1 {
         text-align: center;
-        font-size: 4rem;
+        font-size: $t-fuente_3 + 1rem;
         color: $secondary-color;
     }
 }
@@ -153,10 +156,10 @@ footer {
 .beneficios {
     h1 {
         text-align: center;
-        font-size: $t-fuente-3;
+        font-size: $t-fuente_3;
         padding: $padding-1;
         color: $primary-color;
-        margin-top: 30px;
+        margin-top: $margin-2 - 70px;
     }
 
     p {
@@ -170,7 +173,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 2rem;
+    font-size: $t-fuente_3 - 1rem;
     color: $tertiary-color;
 }
 
@@ -191,7 +194,7 @@ h2 {
 .estilos {
     h1 {
         text-align: center;
-        font-size: $t-fuente-3;
+        font-size: $t-fuente_3;
         padding: 5px;
         color: $primary-color;
     }
@@ -205,8 +208,8 @@ h2 {
 .consultas {
     h1 {
         text-align: center;
-        font-size: $t-fuente-3;
-        margin-top: 25px;
+        font-size: $t-fuente_3;
+        margin-top: $margin-2 - 75px;
         color: $primary-color;
     }
 
@@ -230,7 +233,7 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: $margin-2 - 90px;
     }
 }
 
@@ -259,8 +262,8 @@ p {
     "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, auto);
-    row-gap: 50px;
-    column-gap: 100px;
+    row-gap: $row-2 - 50px;
+    column-gap: $column-2;
     height: $heigth-1;
 }
 
@@ -344,7 +347,7 @@ footer {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, auto);
     row-gap: $row-1;
-    column-gap: 10px;
+    column-gap: $column-2 - 90px;
     
 }
   
@@ -355,6 +358,10 @@ footer {
   
 .estilos {
     grid-area: estilos;
+
+    .estilos-titulo {
+        margin-top: $margin-2 - 20px;
+    }
 }
   
 .clases {
@@ -364,12 +371,6 @@ footer {
 footer {
     grid-area: footer;
 }
-
-
-.estilos-titulo {
-    margin-top: 80px;
-}
-
 
 
 /*-------------------- MEDIA QUERIES HTML: ESTILOS -------------------*/
@@ -384,7 +385,7 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, auto);
         row-gap: $row-1;
-        column-gap: 10px;
+        column-gap: $column-2 - 90px;
         
     }
 }
@@ -418,8 +419,8 @@ footer {
     "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, auto);
-    row-gap: 100px;
-    column-gap: 100px;
+    row-gap: $row-2;
+    column-gap: $column-2;
     height: $heigth-1;
 }
 
@@ -478,8 +479,8 @@ footer {
     "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, auto);
-    row-gap: 25px;
-    column-gap: 100px;
+    row-gap: $row-2 - 75px;
+    column-gap: $column-2;
     height: $heigth-1;
 }
 
@@ -523,9 +524,12 @@ footer {
         height: $heigth-1;
     }
 
-    .consultas h1 {
-        padding: 10px;
+    .consultas {
+        h1 {
+            padding: 10px;
+        }
     }
+    
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
@@ -549,7 +553,7 @@ footer {
 
 /*-------------------- CONTACTO --------------------*/
 .formulario {
-    margin: 20px;
+    margin: $margin-2 - 80px;
 }
 
 .mapa {
