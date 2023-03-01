@@ -22,6 +22,10 @@ $width-1: 100%;
 $heigth-1: 100vh;
 /*Padding y Margin*/
 $padding-1: 15px;
+$margin-1: auto;
+/*Filas y Columnas*/
+$row-1: auto;
+$column-1: auto;
 
 
 /*-------------------- ESTRUCTURA GRID HTML INDEX: INICIO --------------------*/
@@ -47,7 +51,7 @@ header {
 .intro {
     grid-area: intro;
     text-align: center;
-    margin: auto;
+    margin: $margin-1;
 }
 
 .logo {
@@ -60,7 +64,7 @@ header {
 .sobre-mi {
     grid-area: sobre-mi;
     text-align: center;
-    margin: auto;
+    margin: $margin-1;
 }
 
 .imagenes {
@@ -100,10 +104,10 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-    }
-
-    .intro h1 {
-        font-size: 1rem;
+        
+        h1 {
+            font-size: 1rem;
+        }
     }
 }
 
@@ -138,18 +142,28 @@ footer {
 
 
 /*-------------------- TITULOS --------------------*/
-.intro h1 {
-    text-align: center;
-    font-size: 4rem;
-    color: $secondary-color;
+.intro {
+    h1 {
+        text-align: center;
+        font-size: 4rem;
+        color: $secondary-color;
+    }
 }
 
-.beneficios h1 {
-    text-align: center;
-    font-size: $t-fuente-3;
-    padding: $padding-1;
-    color: $primary-color;
-    margin-top: 30px;
+.beneficios {
+    h1 {
+        text-align: center;
+        font-size: $t-fuente-3;
+        padding: $padding-1;
+        color: $primary-color;
+        margin-top: 30px;
+    }
+
+    p {
+        text-align: center;
+        font-size: $t-fuente-1;
+    }
+    
 }
 
 h2 {
@@ -160,26 +174,46 @@ h2 {
     color: $tertiary-color;
 }
 
-.cuerpo {
-    font-size: $t-fuente-1;
+.yoga {
+    .cuerpo {
+        p {
+            font-size: $t-fuente-1;
+        }
+    }
+
+    .mente {
+        p {
+            font-size: $t-fuente-1;
+        }
+    }
 }
 
-.mente {
-    font-size: $t-fuente-1;
+.estilos {
+    h1 {
+        text-align: center;
+        font-size: $t-fuente-3;
+        padding: 5px;
+        color: $primary-color;
+    }
+
+    p {
+        text-align: center;
+        font-size: $t-fuente-1;
+    }
 }
 
-.estilos h1 {
-    text-align: center;
-    font-size: $t-fuente-3;
-    padding: 5px;
-    color: $primary-color;
-}
+.consultas {
+    h1 {
+        text-align: center;
+        font-size: $t-fuente-3;
+        margin-top: 25px;
+        color: $primary-color;
+    }
 
-.consultas h1 {
-    text-align: center;
-    font-size: $t-fuente-3;
-    margin-top: 25px;
-    color: $primary-color;
+    p {
+        text-align: center;
+        font-size: $t-fuente-2;
+    }
 }
 
 
@@ -190,28 +224,20 @@ p {
     padding: $padding-1;
 } 
 
-.beneficios p {
-    text-align: center;
-    font-size: $t-fuente-1;
-    
+.ubicacion {
+    p {
+        font-size: $t-fuente-2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
 }
 
-.estilos p {
-    text-align: center;
-    font-size: $t-fuente-1;
-}
-
-.consultas p {
-    text-align: center;
-    font-size: $t-fuente-2;
-}
-
-.ubicacion p {
-    font-size: $t-fuente-2;
-}
-
-.sobre-mi p {
-    font-size: $t-fuente-1;
+.sobre-mi {
+    p {
+        font-size: $t-fuente-1;
+    }
 }
 
 /*-------------------- IMAGENES --------------------*/
@@ -317,7 +343,7 @@ footer {
     "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, auto);
-    row-gap: auto;
+    row-gap: $row-1;
     column-gap: 10px;
     
 }
@@ -357,7 +383,7 @@ footer {
         "footer footer footer";
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, auto);
-        row-gap: auto;
+        row-gap: $row-1;
         column-gap: 10px;
         
     }
@@ -374,9 +400,8 @@ footer {
         "footer footer footer footer footer footer footer footer";
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(4, auto);
-        row-gap: auto;
-        column-gap: auto;
-        
+        row-gap: $row-1;
+        column-gap: $column-1;  
     }
 }
 
@@ -414,7 +439,6 @@ footer {
     margin-top: 10%;
     text-align: center;
     font-size: $t-fuente-2;
-
 }
 
 
@@ -430,8 +454,8 @@ footer {
         "footer footer footer footer";
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, auto);
-        row-gap: auto;
-        column-gap: auto;
+        row-gap: $row-1;
+        column-gap: $column-1;
         height: $heigth-1;
     }
 
@@ -494,8 +518,8 @@ footer {
         "footer footer footer";
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(5, auto);
-        row-gap: auto;
-        column-gap: auto;
+        row-gap: $row-1;
+        column-gap: $column-1;
         height: $heigth-1;
     }
 
@@ -515,8 +539,8 @@ footer {
         "footer footer footer footer footer footer footer footer";
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(5, auto);
-        row-gap: auto;
-        column-gap: auto;
+        row-gap: $row-1;
+        column-gap: $column-1;
         height: $heigth-1;
     }
 }
@@ -526,13 +550,6 @@ footer {
 /*-------------------- CONTACTO --------------------*/
 .formulario {
     margin: 20px;
-}
-
-.ubicacion p {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 10px;
 }
 
 .mapa {

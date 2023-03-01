@@ -13,6 +13,7 @@ html {
 /*Tipografia - Fuentes, tamaño*/
 /*Height y Width*/
 /*Padding y Margin*/
+/*Filas y Columnas*/
 /*-------------------- ESTRUCTURA GRID HTML INDEX: INICIO --------------------*/
 .grid-container {
   display: grid;
@@ -113,6 +114,10 @@ footer {
   color: rgb(194, 104, 104);
   margin-top: 30px;
 }
+.beneficios p {
+  text-align: center;
+  font-size: 1.2rem;
+}
 
 h2 {
   display: flex;
@@ -122,11 +127,10 @@ h2 {
   color: rgb(166, 119, 219);
 }
 
-.cuerpo {
+.yoga .cuerpo p {
   font-size: 1.2rem;
 }
-
-.mente {
+.yoga .mente p {
   font-size: 1.2rem;
 }
 
@@ -136,12 +140,20 @@ h2 {
   padding: 5px;
   color: rgb(194, 104, 104);
 }
+.estilos p {
+  text-align: center;
+  font-size: 1.2rem;
+}
 
 .consultas h1 {
   text-align: center;
   font-size: 3rem;
   margin-top: 25px;
   color: rgb(194, 104, 104);
+}
+.consultas p {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 /*-------------------- TEXTOS --------------------*/
@@ -151,23 +163,12 @@ p {
   padding: 15px;
 }
 
-.beneficios p {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-.estilos p {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-.consultas p {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
 .ubicacion p {
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .sobre-mi p {
@@ -397,13 +398,6 @@ footer {
 /*-------------------- CONTACTO --------------------*/
 .formulario {
   margin: 20px;
-}
-
-.ubicacion p {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 10px;
 }
 
 .mapa {
