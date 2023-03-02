@@ -1,0 +1,115 @@
+/*---------- TITULOS ----------*/
+.intro {
+    h1 {
+        text-align: center;
+        font-size: $t-fuente_3 + 1rem;
+        color: $secondary-color;
+    }
+}
+
+.beneficios {
+    h1 {
+        text-align: center;
+        font-size: $t-fuente_3;
+        padding: $padding-1;
+        color: $primary-color;
+        margin-top: $margin-2 - 70px;
+    }
+
+    p {
+        text-align: center;
+        font-size: $t-fuente-1;
+    }
+
+}
+
+h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: $t-fuente_3 - 1rem;
+    color: $tertiary-color;
+}
+
+.yoga {
+    .cuerpo {
+        p {
+            font-size: $t-fuente-1;
+        }
+    }
+
+    .mente {
+        p {
+            font-size: $t-fuente-1;
+        }
+    }
+}
+
+.estilos {
+    h1 {
+        text-align: center;
+        font-size: $t-fuente_3;
+        padding: 5px;
+        color: $primary-color;
+    }
+
+    p {
+        text-align: center;
+        font-size: $t-fuente-1;
+    }
+}
+
+.consultas {
+    h1 {
+        text-align: center;
+        font-size: $t-fuente_3;
+        margin-top: $margin-2 - 75px;
+        color: $primary-color;
+    }
+
+    p {
+        text-align: center;
+        font-size: $t-fuente-2;
+    }
+}
+
+
+/*---------- TEXTOS ----------*/
+p {
+    font-size: $t-fuente-1;
+    font-family: $gudea-font-family;
+    padding: $padding-1;
+}
+
+.ubicacion {
+    p {
+        font-size: $t-fuente-2;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: $margin-2 - 90px;
+    }
+}
+
+.sobre-mi {
+    p {
+        font-size: $t-fuente-1;
+    }
+}
+
+/*---------- IMAGENES ----------*/
+.imagenes {
+    padding: $padding-1;
+}
+
+
+/*---------- CONTACTO ----------*/
+.formulario {
+    margin: $margin-2 - 80px;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
