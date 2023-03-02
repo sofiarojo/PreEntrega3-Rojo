@@ -206,7 +206,6 @@ footer {
     grid-template-rows: repeat(4, auto);
     row-gap: $row-1;
     column-gap: $column-2 - 90px;
-
 }
 
 .header {
@@ -244,7 +243,6 @@ footer {
         grid-template-rows: repeat(4, auto);
         row-gap: $row-1;
         column-gap: $column-2 - 90px;
-
     }
 }
 
@@ -317,7 +315,6 @@ footer {
 
     .horarios {
         overflow-x: auto;
-
     }
 }
 
@@ -383,7 +380,6 @@ footer {
             padding: 10px;
         }
     }
-
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
