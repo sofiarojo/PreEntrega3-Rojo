@@ -14,26 +14,30 @@ $secondary-color: rgb(230, 151, 164);
 $tertiary-color: rgb(166, 119, 219);
 
 
-/*Tipografia - Fuentes, tamaño*/
+/*Variables - Tipografia - Fuentes, tamaño*/
 $t-fuente-1: 1.2rem;
 $t-fuente-2: 1.5rem;
 $t-fuente_3: 3rem;
 $gudea-font-family: "Gudea", serif;
 
 
-/*Height y Width*/
+/*Variables - Height y Width*/
 $width-1: 100%;
 $heigth-1: 100vh;
 
 
-/*Padding y Margin*/
+/*Variables - Padding y Margin*/
 $padding-1: 15px;
 $margin-1: auto;
 $margin-2: 100px;
 
 
-/*Filas y Columnas*/
+/*Variables - Filas y Columnas*/
 $row-1: auto;
 $row-2: 100px;
 $column-1: auto;
 $column-2: 100px;
+
+/*Variables - condicionales*/
+$vista: mobile;
+$desktop: 1024px;

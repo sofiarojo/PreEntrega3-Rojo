@@ -11,10 +11,11 @@ html {
 }
 
 /*Variables - colores*/
-/*Tipografia - Fuentes, tamaño*/
-/*Height y Width*/
-/*Padding y Margin*/
-/*Filas y Columnas*/
+/*Variables - Tipografia - Fuentes, tamaño*/
+/*Variables - Height y Width*/
+/*Variables - Padding y Margin*/
+/*Variables - Filas y Columnas*/
+/*Variables - condicionales*/
 /*---------- TITULOS ----------*/
 .intro h1 {
   text-align: center;
@@ -148,50 +149,6 @@ footer {
   grid-area: footer;
 }
 
-/*---------- MEDIA QUERIES HTML INDEX: INICIO ----------*/
-@media only screen and (max-width: 768px) {
-  .grid-container {
-    display: grid;
-    grid-template-areas: "header header header" "intro intro intro" "logo logo logo" "sobre-mi sobre-mi sobre-mi" "imagenes imagenes imagenes" "footer footer footer";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    width: 100%;
-  }
-  .logo {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-  }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .intro h1 {
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .grid-container {
-    display: grid;
-    grid-template-areas: "header header header header header header header header" "intro intro intro intro intro intro intro intro" "logo logo logo logo logo logo logo logo" "sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi sobre-mi" "imagenes imagenes imagenes imagenes imagenes imagenes imagenes imagenes" "footer footer footer footer footer footer footer footer";
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    width: 100%;
-  }
-  .logo {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-  }
-  .intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-}
 /*---------- ESTRUCTURA GRID HTML: BENEFICIOS ----------*/
 .grid-container2 {
   display: grid;
@@ -232,27 +189,6 @@ footer {
   grid-area: footer;
 }
 
-/*---------- MEDIA QUERIES HTML: BENEFICIOS ----------*/
-@media only screen and (max-width: 768px) {
-  .grid-container2 {
-    display: grid;
-    grid-template-areas: "header header header " "beneficios beneficios beneficios" "yoga yoga yoga yoga" "cuerpo cuerpo cuerpo" "mente mente mente" "footer footer footer";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, auto);
-    column-gap: normal;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .grid-container2 {
-    display: grid;
-    grid-template-areas: "header header header header header header" "beneficios beneficios beneficios beneficios beneficios beneficios" "yoga yoga yoga yoga yoga yoga" "cuerpo cuerpo cuerpo cuerpo cuerpo cuerpo" "mente mente mente mente mente mente" "footer footer footer footer footer footer";
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, auto);
-    column-gap: normal;
-    width: 100%;
-  }
-}
 /*---------- ESTRUCTURA GRID HTML ESTILOS ----------*/
 .grid-container3 {
   display: grid;
@@ -282,27 +218,6 @@ footer {
   grid-area: footer;
 }
 
-/*---------- MEDIA QUERIES HTML: ESTILOS ----------*/
-@media only screen and (max-width: 768px) {
-  .grid-container3 {
-    display: grid;
-    grid-template-areas: "header header header" "estilos estilos estilos" "clases clases clases" "footer footer footer";
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    row-gap: auto;
-    column-gap: 10px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .grid-container3 {
-    display: grid;
-    grid-template-areas: "header header header header header header header header" "estilos estilos estilos estilos estilos estilos estilos estilos" "clases clases clases clases clases clases clases clases" "footer footer footer footer footer footer footer footer";
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, auto);
-    row-gap: auto;
-    column-gap: auto;
-  }
-}
 /*---------- ESTRUCTURA GRID HTML: HORARIOS ----------*/
 .grid-container4 {
   display: grid;
@@ -332,21 +247,6 @@ footer {
   font-size: 1.5rem;
 }
 
-/*---------- MEDIA QUERIES HTML: HORARIOS ----------*/
-@media only screen and (max-width: 768px) {
-  .grid-container4 {
-    display: grid;
-    grid-template-areas: "header header header header" "horarios horarios horarios horarios" "table table table table" "footer footer footer footer";
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, auto);
-    row-gap: auto;
-    column-gap: auto;
-    height: 100vh;
-  }
-  .horarios {
-    overflow-x: auto;
-  }
-}
 /*---------- ESTRUCTURA GRID HTML: CONTACTO ----------*/
 .grid-container5 {
   display: grid;
@@ -380,6 +280,72 @@ footer {
   grid-area: footer;
 }
 
+/*Condicionales*/
+/*---------- MEDIA QUERIES HTML INDEX: INICIO ----------*/
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header header header" "intro intro intro" "logo logo logo" "sobre-mi sobre-mi sobre-mi" "imagenes imagenes imagenes" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+  }
+  .grid-container .logo {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+  }
+  .grid-container .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .grid-container .intro h1 {
+    font-size: 3rem;
+  }
+}
+
+/*---------- MEDIA QUERIES HTML: BENEFICIOS ----------*/
+@media only screen and (max-width: 768px) {
+  .grid-container2 {
+    display: grid;
+    grid-template-areas: "header header header " "beneficios beneficios beneficios" "yoga yoga yoga yoga" "cuerpo cuerpo cuerpo" "mente mente mente" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    column-gap: normal;
+    width: 100%;
+  }
+}
+
+/*---------- MEDIA QUERIES HTML: ESTILOS ----------*/
+@media only screen and (max-width: 768px) {
+  .grid-container3 {
+    display: grid;
+    grid-template-areas: "header header header" "estilos estilos estilos" "clases clases clases" "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    row-gap: auto;
+    column-gap: 10px;
+  }
+}
+
+/*---------- MEDIA QUERIES HTML: HORARIOS ----------*/
+@media only screen and (max-width: 768px) {
+  .grid-container4 {
+    display: grid;
+    grid-template-areas: "header header header header" "horarios horarios horarios horarios" "table table table table" "footer footer footer footer";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    row-gap: auto;
+    column-gap: auto;
+    height: 100vh;
+  }
+  .grid-container4 .horarios {
+    overflow-x: auto;
+  }
+}
+
 /*---------- MEDIA QUERIES HTML: CONTACTO ----------*/
 @media only screen and (max-width: 768px) {
   .grid-container5 {
@@ -391,19 +357,8 @@ footer {
     column-gap: auto;
     height: 100vh;
   }
-  .consultas h1 {
+  .grid-container5 .consultas h1 {
     padding: 10px;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .grid-container5 {
-    display: grid;
-    grid-template-areas: "header header header header header header header header" "consultas consultas consultas consultas consultas consultas consultas consultas" "formulario formulario formulario formulario formulario formulario formulario formulario" "ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion ubicacion" "footer footer footer footer footer footer footer footer";
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, auto);
-    row-gap: auto;
-    column-gap: auto;
-    height: 100vh;
   }
 }
 
