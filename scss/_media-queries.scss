@@ -1,6 +1,6 @@
 /*Condicionales*/
 
-/*---------- MEDIA QUERIES HTML INDEX: INICIO ----------*/
+/*---------- Media Queries HTML Index - Inicio ----------*/
 
 .grid-container {
     @if $vista == $desktop {
@@ -68,7 +68,7 @@
 }
 
 
-/*---------- MEDIA QUERIES HTML: BENEFICIOS ----------*/
+/*---------- Media Queries HTML - Beneficios ----------*/
 .grid-container2 {
     @if $vista == $desktop {
         @media screen and (min-width:769px) and (max-width:1024px) {
@@ -106,7 +106,7 @@
 }
 
 
-/*---------- MEDIA QUERIES HTML: ESTILOS ----------*/
+/*---------- Media Queries HTML - Estilos ----------*/
 .grid-container3 {
     @if $vista == $desktop {
         @media screen and (min-width:769px) and (max-width:1024px) {
@@ -140,7 +140,7 @@
 }
 
 
-/*---------- MEDIA QUERIES HTML: HORARIOS ----------*/
+/*---------- Media Queries HTML - Horarios ----------*/
 .grid-container4 {
     @if $vista == mobile {
         @media only screen and (max-width: 768px) {
@@ -164,7 +164,7 @@
 }
 
 
-/*---------- MEDIA QUERIES HTML: CONTACTO ----------*/
+/*---------- Media Queries HTML - Contacto ----------*/
 .grid-container5 {
     @if $vista == $desktop {
         @media screen and (min-width:769px) and (max-width:1024px) {
@@ -205,6 +205,5 @@
             }
         }
     } 
-
 }
 

@@ -1,4 +1,4 @@
-/*---------- TITULOS ----------*/
+/*---------- Titulos - Parrafos ----------*/
 .intro {
     h1 {
         text-align: center;
@@ -74,7 +74,6 @@ h2 {
 }
 
 
-/*---------- TEXTOS ----------*/
 p {
     font-size: $t-fuente-1;
     font-family: $gudea-font-family;
@@ -97,13 +96,13 @@ p {
     }
 }
 
-/*---------- IMAGENES ----------*/
+/*---------- Imagenes ----------*/
 .imagenes {
     padding: $padding-1;
 }
 
 
-/*---------- CONTACTO ----------*/
+/*---------- Contacto ----------*/
 .formulario {
     margin: $margin-2 - 80px;
 }
