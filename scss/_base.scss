@@ -42,14 +42,14 @@ $column-2: 100px;
 $vista: mobile;
 $desktop: 1024px;
 
-/*Mixins sin parametros*/
+/*Mixin sin parametros*/
 @mixin flex-row-center {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-/*Mixins con parametros*/
+/*Mixin con parametros*/
 @mixin gap($row,$column) {
     row-gap: $row;
     column-gap: $column;
