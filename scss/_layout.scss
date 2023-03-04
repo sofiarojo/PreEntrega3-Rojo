@@ -26,9 +26,7 @@ header {
 
 .logo {
     grid-area: logo;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    @include flex-row-center;
 }
 
 .sobre-mi {
@@ -139,8 +137,7 @@ footer {
         "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, auto);
-    row-gap: $row-2;
-    column-gap: $column-2;
+    @include gap($row-2,$column-2);
     height: $heigth-1;
 }
 
@@ -174,8 +171,7 @@ footer {
         "footer footer footer footer footer footer footer footer footer footer footer footer";
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, auto);
-    row-gap: $row-2 - 75px;
-    column-gap: $column-2;
+    @include gap($row-2 - 75px, $column-2);
     height: $heigth-1;
 }
 

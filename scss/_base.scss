@@ -41,3 +41,16 @@ $column-2: 100px;
 /*Variables - condicionales*/
 $vista: mobile;
 $desktop: 1024px;
+
+/*Mixins sin parametros*/
+@mixin flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Mixins con parametros*/
+@mixin gap($row,$column) {
+    row-gap: $row;
+    column-gap: $column;
+}
