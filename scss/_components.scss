@@ -177,3 +177,29 @@ p {
     }
 }
 
+.header {
+    .navbar {
+        .container-fluid {
+            .navbar-brand {
+                animation-name: desplazarse;
+                position: relative;
+                animation-duration: 2.5s;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate-reverse;
+                animation-fill-mode: both;
+                animation-play-state: running;
+            }
+        }
+    }
+
+    @keyframes desplazarse {
+        from {
+            left: 0%;
+        }
+        
+        to {
+            left: 80%;
+        }
+    }
+}
+
