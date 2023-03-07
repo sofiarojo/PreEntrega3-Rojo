@@ -118,7 +118,7 @@ p {
   justify-content: center;
 }
 
-/*---------- Animaciones ----------*/
+/*---------- Animaciones navbar - cards ----------*/
 .imagenes .row .col .card .card-img-top {
   -webkit-transition: all 0.9s ease;
   -moz-transition: all 0.9s ease;
