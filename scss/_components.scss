@@ -19,26 +19,29 @@
     p {
         text-align: center;
         font-size: $t-fuente-1;
+        font-family: $gudea-font-family;
     }
-
 }
 
 h2 {
     @include flex-row-center;
     font-size: $t-fuente_3 - 1rem;
     color: $tertiary-color;
+    margin-top: 25px;
 }
 
 .yoga {
     .cuerpo {
         p {
             font-size: $t-fuente-1;
+            margin-top: 20px;
         }
     }
 
     .mente {
         p {
             font-size: $t-fuente-1;
+            margin-top: 25px;
         }
     }
 }
