@@ -44,6 +44,7 @@ h2 {
   justify-content: center;
   font-size: 2rem;
   color: rgb(166, 119, 219);
+  margin-top: 25px;
 }
 
 .yoga .cuerpo p {
@@ -400,9 +401,6 @@ footer {
     row-gap: auto;
     column-gap: auto;
     height: 100vh;
-  }
-  .grid-container4 .horarios {
-    overflow-x: auto;
   }
 }
 
